@@ -1,7 +1,7 @@
 # Meson build file
 
-# https://github.com/linuxmint/cinnamon-desktop
-project('cinnamon-desktop', 'c', version : '6.6.2', meson_version : '>=0.56.0')
+# https://github.com/Studio-Hastag/cinnade-desktop
+project('cinnade-desktop', 'c', version : '7.0.0', meson_version : '>=0.56.0')
 
 # Before making a release, the LT_VERSION string should be modified.
 # The string is of the form C.R.A.
@@ -43,7 +43,7 @@ xrandr  = dependency('xrandr',          version: '>=1.3')
 iso_codes = dependency('iso-codes')
 udev    = dependency('libudev')
 
-cinnamon_deps = [
+cinnade_deps = [
   gdk_pixb,
   gio,
   glib,
@@ -95,7 +95,7 @@ configure_file(
 
 subdir('install-scripts')
 subdir('po')
-subdir('libcinnamon-desktop')
+subdir('libcinnade-desktop')
 subdir('libcvc')
 subdir('schemas')
 
