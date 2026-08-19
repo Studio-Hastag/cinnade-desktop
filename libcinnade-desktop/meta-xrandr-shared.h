@@ -17,7 +17,7 @@
  */
 
 /* This file is shared between mutter (src/core/meta-xrandr-shared.h)
-   and gnome-desktop (libcinnamon-desktop/meta-xrandr-shared.h).
+   and gnome-desktop (libcinnade-desktop/meta-xrandr-shared.h).
 
    The canonical place for all changes is mutter.
 

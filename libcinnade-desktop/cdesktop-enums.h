@@ -214,7 +214,7 @@ typedef enum
 {
 /* All bindings before _SEPARATOR are treated as
  * "global" bindings, i.e. they work regardless of
- * Cinnamon's global state (open menus, etc...)
+ * Cinnade's global state (open menus, etc...)
  */
         C_DESKTOP_MEDIA_KEY_MUTE,
         C_DESKTOP_MEDIA_KEY_MUTE_QUIET,
@@ -239,7 +239,7 @@ typedef enum
 
         C_DESKTOP_MEDIA_KEY_SEPARATOR,
 /* The rest are normal priority - they won't trigger during
-   a modal Cinnamon state
+   a modal Cinnade state
  */
         C_DESKTOP_MEDIA_KEY_WINDOW_SCREENSHOT,
         C_DESKTOP_MEDIA_KEY_WINDOW_SCREENSHOT_CLIP,
@@ -258,7 +258,7 @@ typedef enum
         C_DESKTOP_MEDIA_KEY_HELP,
         C_DESKTOP_MEDIA_KEY_TERMINAL,
         C_DESKTOP_MEDIA_KEY_WWW,
-        C_DESKTOP_MEDIA_KEY_VIDEO_OUT, // obsolete - handled in muffin now. Skipped in keybindings.js
+        C_DESKTOP_MEDIA_KEY_VIDEO_OUT, // obsolete - handled in mythicwm now. Skipped in keybindings.js
         C_DESKTOP_MEDIA_KEY_ROTATE_VIDEO, // obsolete ^^
         C_DESKTOP_MEDIA_KEY_ROTATE_VIDEO_LOCK,
         C_DESKTOP_MEDIA_KEY_SCREENREADER,

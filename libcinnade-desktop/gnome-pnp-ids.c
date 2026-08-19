@@ -20,7 +20,7 @@
 #include "config.h"
 
 #include <glib-object.h>
-#include <libcinnamon-desktop/gnome-pnp-ids.h>
+#include <libcinnade-desktop/gnome-pnp-ids.h>
 #include <libudev.h>
 
 static void     gnome_pnp_ids_finalize     (GObject     *object);

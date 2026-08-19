@@ -1,5 +1,5 @@
 #define GNOME_DESKTOP_USE_UNSTABLE_API
-#include <libcinnamon-desktop/gnome-wall-clock.h>
+#include <libcinnade-desktop/gnome-wall-clock.h>
 
 static void
 clock_changed (GObject    *object,

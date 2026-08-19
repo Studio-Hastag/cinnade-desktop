@@ -60,12 +60,12 @@ enum {
 
 G_DEFINE_TYPE_WITH_PRIVATE (GnomeWallClock, gnome_wall_clock, G_TYPE_OBJECT);
 
-/* Date/Time format defaults - options are stored in org.cinnamon.desktop.interface keys.
- * The wall clock is used variously in Cinnamon applets and desklets, as well as
- * cinnamon-screensaver's default lock screen. */
+/* Date/Time format defaults - options are stored in org.cinnade.desktop.interface keys.
+ * The wall clock is used variously in Cinnade applets and desklets, as well as
+ * cinnade-screensaver's default lock screen. */
 
 /* Default date format (typically matching date portion of WITH_DATE_* defaults.)
- * Currently used by cinnamon-screensaver default clock */
+ * Currently used by cinnade-screensaver default clock */
 #define DATE_ONLY             (_("%A, %B %-e"))
 
 /* Default date/time format when show-date, show-seconds, use-24h are set */
@@ -122,7 +122,7 @@ gnome_wall_clock_init (GnomeWallClock *self)
 	
 	g_signal_connect (self->priv->tz_monitor, "changed", G_CALLBACK (on_tz_changed), self);
 	
-	self->priv->desktop_settings = g_settings_new ("org.cinnamon.desktop.interface");
+	self->priv->desktop_settings = g_settings_new ("org.cinnade.desktop.interface");
 	g_signal_connect (self->priv->desktop_settings, "changed", G_CALLBACK (on_schema_change), self);
 
      /* A format string provided for construction will be set after gnome_wall_clock_init()

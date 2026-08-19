@@ -37,8 +37,8 @@
 
 #include "gnome-rr-private.h"
 
-#define CONFIG_INTENDED_BASENAME "cinnamon-monitors.xml"
-#define CONFIG_BACKUP_BASENAME "cinnamon-monitors.xml.backup"
+#define CONFIG_INTENDED_BASENAME "cinnade-monitors.xml"
+#define CONFIG_BACKUP_BASENAME "cinnade-monitors.xml.backup"
 
 /* Look for DPI_FALLBACK in:
  * http://git.gnome.org/browse/gnome-settings-daemon/tree/plugins/xsettings/gsd-xsettings-manager.c
@@ -658,7 +658,7 @@ gnome_rr_config_apply_persistent (GnomeRRConfig *config,
 /**
  * gnome_rr_config_get_outputs:
  *
- * Returns: (array zero-terminated=1) (element-type CinnamonDesktop.RROutputInfo) (transfer none): the output configuration for this #GnomeRRConfig
+ * Returns: (array zero-terminated=1) (element-type CinnadeDesktop.RROutputInfo) (transfer none): the output configuration for this #GnomeRRConfig
  */
 GnomeRROutputInfo **
 gnome_rr_config_get_outputs (GnomeRRConfig *self)

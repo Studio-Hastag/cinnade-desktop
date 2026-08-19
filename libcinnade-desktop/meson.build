@@ -1,17 +1,17 @@
 dbus_xrandr_built_sources = gnome.gdbus_codegen('meta-dbus-xrandr',
   'xrandr.xml',
   namespace: 'MetaDBus',
-  interface_prefix: 'org.cinnamon.Muffin'
+  interface_prefix: 'org.cinnade.MythicWM'
 )
 
 dbus_idle_built_sources = gnome.gdbus_codegen('meta-dbus-idle-monitor',
   'idle-monitor.xml',
   namespace: 'MetaDBus',
-  interface_prefix: 'org.cinnamon.Muffin',
+  interface_prefix: 'org.cinnade.MythicWM',
   object_manager: true
 )
 
-libcinnamon_desktop_gir_sources = [
+libcinnade_desktop_gir_sources = [
   'display-name.c',
   'edid-parse.c',
   'gnome-bg-crossfade.c',
@@ -32,23 +32,23 @@ libcinnamon_desktop_gir_sources = [
   'gnome-xkb-info.c',
 ]
 
-libcinnamon_desktop_misc_headers = [
+libcinnade_desktop_misc_headers = [
   'gnome-datetime-source.h',
   'gnome-rr-private.h',
   'edid.h',
   'private.h'
 ]
 
-libcinnamon_desktop_sources = [
-  libcinnamon_desktop_gir_sources,
-  libcinnamon_desktop_misc_headers,
+libcinnade_desktop_sources = [
+  libcinnade_desktop_gir_sources,
+  libcinnade_desktop_misc_headers,
   'gnome-datetime-source.c',
 ]
 
 cdesktop_headers = [
   'cdesktop-enums.h',
 ]
-libcinnamon_desktop_headers = [
+libcinnade_desktop_headers = [
   'gnome-bg-crossfade.h',
   'gnome-bg.h',
   'gnome-desktop-thumbnail.h',
@@ -64,39 +64,39 @@ libcinnamon_desktop_headers = [
   'gnome-xkb-info.h',
 ]
 
-libcinnamon_desktop = shared_library('cinnamon-desktop',
+libcinnade_desktop = shared_library('cinnade-desktop',
   [
-    libcinnamon_desktop_sources,
+    libcinnade_desktop_sources,
     dbus_idle_built_sources,
     dbus_xrandr_built_sources
   ],
   include_directories: [ rootInclude ],
   c_args: [
-    '-DG_LOG_DOMAIN="CinnamonDesktop"',
+    '-DG_LOG_DOMAIN="CinnadeDesktop"',
     '-DXKB_BASE="@0@"'.format(xkb_base),
   ],
-  dependencies: cinnamon_deps,
+  dependencies: cinnade_deps,
   install: true,
   version: LT_VERSION,
 )
 
 install_headers(
-  libcinnamon_desktop_headers + cdesktop_headers,
-  subdir: join_paths('cinnamon-desktop', 'libcinnamon-desktop')
+  libcinnade_desktop_headers + cdesktop_headers,
+  subdir: join_paths('cinnade-desktop', 'libcinnade-desktop')
 )
 
 pkgconfig.generate(
-  name: 'cinnamon-desktop',
+  name: 'cinnade-desktop',
   description: 'Utility library for loading .desktop files',
   version: meson.project_version(),
   requires: [ 'gtk+-3.0', ],
   requires_private: [ 'xkbfile', ],
-  libraries: libcinnamon_desktop,
-  subdirs: join_paths('cinnamon-desktop'),
+  libraries: libcinnade_desktop,
+  subdirs: join_paths('cinnade-desktop'),
   variables: [ 'exec_prefix=${prefix}'],
 )
 
-cdesktop_gir = gnome.generate_gir(libcinnamon_desktop,
+cdesktop_gir = gnome.generate_gir(libcinnade_desktop,
   sources: 'cdesktop-enums.h',
   namespace: 'CDesktopEnums',
   nsversion: '3.0',
@@ -108,11 +108,11 @@ cdesktop_gir = gnome.generate_gir(libcinnamon_desktop,
   install: true,
 )
 
-gnome.generate_gir(libcinnamon_desktop,
-  sources: libcinnamon_desktop_gir_sources + libcinnamon_desktop_headers,
-  namespace: 'CinnamonDesktop',
+gnome.generate_gir(libcinnade_desktop,
+  sources: libcinnade_desktop_gir_sources + libcinnade_desktop_headers,
+  namespace: 'CinnadeDesktop',
   nsversion: '3.0',
-  export_packages: 'cinnamon-desktop',
+  export_packages: 'cinnade-desktop',
   identifier_prefix: 'Gnome',
   symbol_prefix: 'gnome_',
   includes: ['GObject-2.0', 'Gtk-3.0', cdesktop_gir[0], ],
@@ -125,13 +125,13 @@ gnome.generate_gir(libcinnamon_desktop,
 # FIXME
 # https://github.com/mesonbuild/meson/issues/1687
 custom_target('gsettings-enums',
-  input : libcinnamon_desktop_headers + libcinnamon_desktop_misc_headers + cdesktop_headers,
-  output: 'org.cinnamon.desktop.enums.xml',
+  input : libcinnade_desktop_headers + libcinnade_desktop_misc_headers + cdesktop_headers,
+  output: 'org.cinnade.desktop.enums.xml',
   capture: true,
   command: ['glib-mkenums',
     '--comments', '<!-- @comment@ -->',
     '--fhead', '<schemalist>',
-    '--vhead', '  <@type@ id=\'org.cinnamon.desktop.@EnumName@\'>',
+    '--vhead', '  <@type@ id=\'org.cinnade.desktop.@EnumName@\'>',
     '--vprod', '    <value nick=\'@valuenick@\' value=\'@valuenum@\'/>',
     '--vtail', '  </@type@>',
     '--ftail', '</schemalist>',

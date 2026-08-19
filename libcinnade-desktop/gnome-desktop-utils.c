@@ -81,7 +81,7 @@ gnome_desktop_prepend_terminal_to_vector (int *argc, char ***argv)
 		*argc = i;
 	}
 
-	settings = g_settings_new ("org.cinnamon.desktop.default-applications.terminal");
+	settings = g_settings_new ("org.cinnade.desktop.default-applications.terminal");
 	terminal = g_settings_get_string (settings, "exec");
 
 	if (terminal) {

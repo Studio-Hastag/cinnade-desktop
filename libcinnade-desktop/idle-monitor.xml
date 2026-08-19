@@ -3,14 +3,14 @@
 'http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd'>
 <node>
   <!--
-      org.cinnamon.Muffin.IdleMonitor:
+      org.cinnade.MythicWM.IdleMonitor:
       @short_description: idle monitor interface
 
       This interface is used by gnome-desktop to implement
       user activity monitoring.
   -->
 
-  <interface name="org.cinnamon.Muffin.IdleMonitor">
+  <interface name="org.cinnade.MythicWM.IdleMonitor">
     <method name="GetIdletime">
       <arg name="idletime" direction="out" type="t"/>
     </method>

@@ -805,7 +805,7 @@ gnome_desktop_thumbnail_factory_init (GnomeDesktopThumbnailFactory *factory)
 
   g_mutex_init (&priv->lock);
 
-  priv->settings = g_settings_new ("org.cinnamon.desktop.thumbnailers");
+  priv->settings = g_settings_new ("org.cinnade.desktop.thumbnailers");
   priv->disabled = g_settings_get_boolean (priv->settings, "disable-all");
   if (!priv->disabled)
     priv->disabled_types = g_settings_get_strv (priv->settings, "disable");
