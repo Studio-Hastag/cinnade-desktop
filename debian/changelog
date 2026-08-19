@@ -1,3 +1,9 @@
+cinnade-desktop (7.0.0) lucid; urgency=medium
+
+  * Add Cinnade Library
+
+ -- Studio Hastag <contact@hastag.fr>  Tue, 18 Aug 2026 22:34:10 +0200
+
 cinnamon-desktop (6.6.2) zena; urgency=medium
 
   [ Michael Webster ]

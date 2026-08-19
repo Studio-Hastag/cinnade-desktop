@@ -2,3 +2,5 @@
 usr/lib/*/cinnamon-rr-debug
 usr/lib/*/libcinnamon-desktop.la
 usr/lib/*/libcvc.la
+usr/lib/*/cinnade-rr-debug
+usr/lib/*/libcinnade-desktop.la

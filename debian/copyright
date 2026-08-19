@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: cinnamon-desktop
-Source: https://github.com/linuxmint/cinnamon-desktop
+Upstream-Name: cinnade-desktop
+Source: https://github.com/Studio-Hastag/cinnade-desktop
 
 Files: *
 Copyright: 2004, Adam Weinberger and the GNOME Foundation
@@ -34,6 +34,7 @@ Copyright: 2004, Adam Weinberger and the GNOME Foundation
            1999-2012, cinnamon-desktop
            1999-2010, the author(s) of cinnamon-desktop
            2003-2005, www.kyfieithu.co.uk, Dafydd Harries, Gareth Bowker
+           2026, Studio Hastag <contact@hastag.fr>
 License: LGPL-2+
  This program is free software; you can redistribute it and/or
  modify it under the terms of the GNU Library General Public License as
@@ -53,12 +54,12 @@ License: LGPL-2+
  On Debian systems, the complete text of the GNU Library General
  Public License can be found in "/usr/share/common-licenses/LGPL-2".
 
-Files: libcinnamon-desktop/cinnamon-rr-debug.c
-       libcinnamon-desktop/gnome-pnp-ids.c
-       libcinnamon-desktop/gnome-pnp-ids.h
-       libcinnamon-desktop/gnome-xkb-info.c
-       libcinnamon-desktop/gnome-xkb-info.h
-       libcinnamon-desktop/test-pnp-ids.c
+Files: libcinnade-desktop/cinnade-rr-debug.c
+       libcinnade-desktop/gnome-pnp-ids.c
+       libcinnade-desktop/gnome-pnp-ids.h
+       libcinnade-desktop/gnome-xkb-info.c
+       libcinnade-desktop/gnome-xkb-info.h
+       libcinnade-desktop/test-pnp-ids.c
        libcvc/gvc-channel-map-private.h
        libcvc/gvc-channel-map.c
        libcvc/gvc-channel-map.h
@@ -94,10 +95,11 @@ Copyright: 2009-2012, Bastien Nocera <hadess@hadess.net>
            2009-2012, Richard Hughes <richard@hughsie.com>
            2008, Sjoerd Simons <sjoerd@luon.net>
            2008, William Jon McCann
+           2026, Studio Hastag <contact@hastag.fr>
 License: GPL-2+
 
-Files: libcinnamon-desktop/display-name.c
-       libcinnamon-desktop/edid-parse.c
+Files: libcinnade-desktop/display-name.c
+       libcinnade-desktop/edid-parse.c
 Copyright: 2007, Red Hat, Inc.
 License: MIT/X11
  Permission is hereby granted, free of charge, to any person obtaining a
@@ -127,9 +129,9 @@ License: GPL
  On Debian systems, the complete text of the GNU General Public License can be
  found in "/usr/share/common-licenses/GPL-1".
 
-Files: libcinnamon-desktop/cdesktop-enums.h
-       libcinnamon-desktop/gnome-installer.c
-       libcinnamon-desktop/gnome-installer.h
+Files: libcinnade-desktop/cdesktop-enums.h
+       libcinnade-desktop/gnome-installer.c
+       libcinnade-desktop/gnome-installer.h
 Copyright: 2010, Codethink Limited
 License: LGPL-2.1+
  This library is free software; you can redistribute it and/or
@@ -153,6 +155,7 @@ License: LGPL-2.1+
 Files: debian/*
 Copyright: 2013, Clement Lefebvre <root@linuxmint.com>
            2013, Maximiliano Curia <maxy@debian.org>
+           2026, Studio Hastag <contact@hastag.fr>
 License: GPL-2+
 
 License: GPL-2+

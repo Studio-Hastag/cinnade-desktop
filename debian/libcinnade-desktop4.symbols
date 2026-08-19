@@ -1,4 +1,4 @@
-libcinnamon-desktop.so.4 libcinnamon-desktop4 #MINVER#
+libcinnade-desktop.so.4 libcinnade-desktop4 #MINVER#
  _gnome_datetime_source_new@Base 3.8.1
  _gnome_desktop_init_i18n@Base 3.8.1
  _gnome_rr_output_connector_type_is_builtin_display@Base 6.2.0

@@ -1,0 +1,5 @@
+usr/include/cinnade-desktop/libcinnade-desktop
+usr/lib/*/libcinnade-desktop.so
+usr/lib/*/pkgconfig/cinnade-desktop.pc
+usr/share/gir-1.0/CDesktopEnums-3.0.gir
+usr/share/gir-1.0/CinnadeDesktop-3.0.gir
