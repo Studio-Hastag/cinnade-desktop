@@ -75,7 +75,7 @@ gnome.generate_gir(libcvc,
 
 install_headers(
   libcvc_headers,
-  subdir: join_paths('cinnamon-desktop', 'libcvc'),
+  subdir: join_paths('cinnade-desktop', 'libcvc'),
 )
 
 if use_alsa
@@ -97,7 +97,7 @@ pkgconfig.generate(
     'gobject-2.0',
   ],
   libraries: libcvc,
-  subdirs: join_paths('cinnamon-desktop', 'libcvc'),
+  subdirs: join_paths('cinnade-desktop', 'libcvc'),
   variables: [
     'exec_prefix=${prefix}',
   ],

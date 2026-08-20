@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <schemalist>
-  <schema id="org.cinnamon.desktop.privacy" path="/org/cinnamon/desktop/privacy/">
+  <schema id="org.cinnade.desktop.privacy" path="/org/cinnade/desktop/privacy/">
     <key name="remove-old-trash-files" type="b">
       <default>false</default>
       <summary>Whether to remove old files from the trash automatically</summary>

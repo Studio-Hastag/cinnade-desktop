@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema path="/org/cinnamon/desktop/notifications/" id="org.cinnamon.desktop.notifications">
+  <schema path="/org/cinnade/desktop/notifications/" id="org.cinnade.desktop.notifications">
     <key type="b" name="fade-on-mouseover">
       <default>true</default>
       <summary>Notifications fade out</summary>
@@ -31,7 +31,7 @@
       <summary>Whether notifications are displayed on the bottom side of the screen</summary>
     </key>
     <key name="notification-screen-display"
-         enum="org.cinnamon.desktop.CDesktopNotificationScreenDisplay">
+         enum="org.cinnade.desktop.CDesktopNotificationScreenDisplay">
       <default>'primary-screen'</default>
       <summary>Define which screen(s) to use for displaying notifications</summary>
       <description>

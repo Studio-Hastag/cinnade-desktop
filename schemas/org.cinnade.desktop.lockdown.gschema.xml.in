@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="org.cinnamon.desktop.lockdown" path="/org/cinnamon/desktop/lockdown/">
+  <schema id="org.cinnade.desktop.lockdown" path="/org/cinnade/desktop/lockdown/">
     <key name="disable-command-line" type="b">
       <default>false</default>
       <summary>Disable command line</summary>

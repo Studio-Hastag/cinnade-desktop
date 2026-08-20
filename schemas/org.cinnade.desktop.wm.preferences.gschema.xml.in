@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="org.cinnamon.desktop.wm.preferences" path="/org/cinnamon/desktop/wm/preferences/">
+  <schema id="org.cinnade.desktop.wm.preferences" path="/org/cinnade/desktop/wm/preferences/">
     <key name="mouse-button-modifier" type="s">
       <default><![CDATA['<Alt>']]></default>
       <summary>Modifier to use for modified window click actions</summary>
@@ -45,7 +45,7 @@
         two adjacent buttons.
       </description>
     </key>
-    <key name="focus-mode" enum="org.cinnamon.desktop.CDesktopFocusMode">
+    <key name="focus-mode" enum="org.cinnade.desktop.CDesktopFocusMode">
       <default>'click'</default>
       <summary>Window focus mode</summary>
       <description>
@@ -57,7 +57,7 @@
       </description>
     </key>
     <key name="focus-new-windows"
-         enum="org.cinnamon.desktop.CDesktopFocusNewWindows">
+         enum="org.cinnade.desktop.CDesktopFocusNewWindows">
       <default>'smart'</default>
       <summary>Control how new windows get focus</summary>
       <description>
@@ -98,7 +98,7 @@
       </description>
     </key>
     <key name="action-double-click-titlebar"
-         enum="org.cinnamon.desktop.CDesktopTitlebarAction">
+         enum="org.cinnade.desktop.CDesktopTitlebarAction">
       <default>'toggle-maximize'</default>
       <summary>Action on title bar double-click</summary>
       <description>
@@ -124,7 +124,7 @@
       </aliases>
     </key>
     <key name="action-middle-click-titlebar"
-         enum="org.cinnamon.desktop.CDesktopTitlebarAction">
+         enum="org.cinnade.desktop.CDesktopTitlebarAction">
       <default>'lower'</default>
       <summary>Action on title bar middle-click</summary>
       <description>
@@ -150,7 +150,7 @@
       </aliases>
     </key>
     <key name="action-right-click-titlebar"
-         enum="org.cinnamon.desktop.CDesktopTitlebarAction">
+         enum="org.cinnade.desktop.CDesktopTitlebarAction">
       <default>'menu'</default>
       <summary>Action on title bar right-click</summary>
       <description>
@@ -176,7 +176,7 @@
       </aliases>
     </key>
     <key name="action-scroll-titlebar"
-         enum="org.cinnamon.desktop.CDesktopTitlebarScrollAction">
+         enum="org.cinnade.desktop.CDesktopTitlebarScrollAction">
       <default>'none'</default>
       <summary>Action on spinning the mouse wheel on the titlebar</summary>
       <description>
@@ -274,7 +274,7 @@
       </description>
     </key>
     <key name="visual-bell-type"
-         enum="org.cinnamon.desktop.CDesktopVisualBellType">
+         enum="org.cinnade.desktop.CDesktopVisualBellType">
       <default>'fullscreen-flash'</default>
       <summary>Visual Bell Type</summary>
       <description>
@@ -297,7 +297,7 @@
       </aliases>
     </key>
     <key name="bell-sound" type="s">
-      <default>'/usr/share/cinnamon/sounds/bell.ogg'</default>
+      <default>'/usr/share/cinnade/sounds/bell.ogg'</default>
       <summary>Sound to use for the event bell</summary>
     </key>
     <key name="application-based" type="b">

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="org.cinnamon.desktop.input-sources"
-          path="/org/cinnamon/desktop/input-sources/">
+  <schema id="org.cinnade.desktop.input-sources"
+          path="/org/cinnade/desktop/input-sources/">
     <key name="current" type="u">
       <default>0</default>
       <summary>Current input source</summary>

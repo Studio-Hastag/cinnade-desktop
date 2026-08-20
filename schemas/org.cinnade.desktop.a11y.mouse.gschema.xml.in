@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="org.cinnamon.desktop.a11y.mouse" path="/org/cinnamon/desktop/a11y/mouse/">
+  <schema id="org.cinnade.desktop.a11y.mouse" path="/org/cinnade/desktop/a11y/mouse/">
     <key name="dwell-time" type="d">
       <default>1.20</default>
       <summary>Dwell click time</summary>
@@ -11,27 +11,27 @@
       <summary>Movement threshold</summary>
       <description>Distance in pixels before movement will be recognized.</description>
     </key>
-    <key name="dwell-gesture-single" enum="org.cinnamon.desktop.CDesktopMouseDwellDirection">
+    <key name="dwell-gesture-single" enum="org.cinnade.desktop.CDesktopMouseDwellDirection">
       <default>'left'</default>
       <summary>Gesture single click</summary>
       <description>Direction to perform a single click ('left', 'right', 'up', 'down).</description>
     </key>
-    <key name="dwell-gesture-double" enum="org.cinnamon.desktop.CDesktopMouseDwellDirection">
+    <key name="dwell-gesture-double" enum="org.cinnade.desktop.CDesktopMouseDwellDirection">
       <default>'up'</default>
       <summary>Gesture double click</summary>
       <description>Direction to perform a double click ('left', 'right', 'up', 'down).</description>
     </key>
-    <key name="dwell-gesture-drag" enum="org.cinnamon.desktop.CDesktopMouseDwellDirection">
+    <key name="dwell-gesture-drag" enum="org.cinnade.desktop.CDesktopMouseDwellDirection">
       <default>'down'</default>
       <summary>Gesture drag click</summary>
       <description>Direction to perform dragging ('left', 'right', 'up', 'down).</description>
     </key>
-    <key name="dwell-gesture-secondary" enum="org.cinnamon.desktop.CDesktopMouseDwellDirection">
+    <key name="dwell-gesture-secondary" enum="org.cinnade.desktop.CDesktopMouseDwellDirection">
       <default>'right'</default>
       <summary>Gesture secondary click</summary>
       <description>Direction to perform a secondary click ('left', 'right', 'up', 'down).</description>
     </key>
-    <key name="dwell-mode" enum="org.cinnamon.desktop.CDesktopMouseDwellMode">
+    <key name="dwell-mode" enum="org.cinnade.desktop.CDesktopMouseDwellMode">
       <default>'window'</default>
       <summary>Dwell click mode</summary>
       <description>The active dwell click mode. Possible values are 'window' and 'gesture'.</description>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="org.cinnamon.desktop.background" path="/org/cinnamon/desktop/background/">
-    <key name="picture-options" enum="org.cinnamon.desktop.CDesktopBackgroundStyle">
+  <schema id="org.cinnade.desktop.background" path="/org/cinnade/desktop/background/">
+    <key name="picture-options" enum="org.cinnade.desktop.CDesktopBackgroundStyle">
       <default>'zoom'</default>
       <summary>Picture Options</summary>
       <description>
@@ -40,7 +40,7 @@
         Right or Bottom color when drawing gradients, not used for solid color.
       </description>
     </key>
-    <key name="color-shading-type" enum="org.cinnamon.desktop.CDesktopBackgroundShading">
+    <key name="color-shading-type" enum="org.cinnade.desktop.CDesktopBackgroundShading">
       <default>'solid'</default>
       <summary>Color Shading Type</summary>
       <description>
@@ -50,7 +50,7 @@
     </key>
   </schema>
 
-  <schema id="org.cinnamon.desktop.background.slideshow" path="/org/cinnamon/desktop/background/slideshow/">
+  <schema id="org.cinnade.desktop.background.slideshow" path="/org/cinnade/desktop/background/slideshow/">
     <key name="slideshow-enabled" type="b">
       <default>false</default>
       <summary>Whether or not to use a slideshow for the desktop background</summary>

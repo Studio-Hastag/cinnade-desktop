@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="org.cinnamon.desktop.a11y.applications" path="/org/cinnamon/desktop/a11y/applications/">
+  <schema id="org.cinnade.desktop.a11y.applications" path="/org/cinnade/desktop/a11y/applications/">
     <key name="screen-keyboard-enabled" type="b">
       <default>false</default>
       <summary>On-screen keyboard</summary>

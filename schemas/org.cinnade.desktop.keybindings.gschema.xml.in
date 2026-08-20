@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="org.cinnamon.desktop.keybindings" path="/org/cinnamon/desktop/keybindings/">
+  <schema id="org.cinnade.desktop.keybindings" path="/org/cinnade/desktop/keybindings/">
     <key name="custom-list" type="as">
       <default>[]</default>
       <summary>List of gsettings custom keybinding paths to look in</summary>
@@ -44,7 +44,7 @@
     </key>
   </schema>
 
-  <schema id="org.cinnamon.desktop.keybindings.custom-keybinding">
+  <schema id="org.cinnade.desktop.keybindings.custom-keybinding">
     <key name="name" type="s">
       <default>''</default>
       <summary>Name</summary>

@@ -27,7 +27,7 @@ gschema_conf = configuration_data()
 gschema_conf.set('datadir', join_paths(get_option('prefix'), get_option('datadir')))
 
 foreach schema : desktop_gschemas
-  schema_file = 'org.cinnamon.desktop.' + schema + '.gschema.xml'
+  schema_file = 'org.cinnade.desktop.' + schema + '.gschema.xml'
 
   schema_configured = configure_file(
     input : schema_file + '.in',

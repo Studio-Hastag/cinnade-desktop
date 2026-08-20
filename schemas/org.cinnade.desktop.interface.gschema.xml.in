@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="org.cinnamon.desktop.interface" path="/org/cinnamon/desktop/interface/">
+  <schema id="org.cinnade.desktop.interface" path="/org/cinnade/desktop/interface/">
     <key name="toolkit-accessibility" type="b">
       <default>false</default>
       <summary>Enable Toolkit Accessibility</summary>
@@ -35,7 +35,7 @@
         positioned over an active menuitem.
       </description>
     </key>
-    <key name="toolbar-style" enum="org.cinnamon.desktop.CDesktopToolbarStyle">
+    <key name="toolbar-style" enum="org.cinnade.desktop.CDesktopToolbarStyle">
       <default>'both-horiz'</default>
       <summary>Toolbar Style</summary>
       <description>
@@ -71,7 +71,7 @@
         Whether the user can detach toolbars and move them around.
       </description>
     </key>
-    <key name="toolbar-icons-size" enum="org.cinnamon.desktop.CDesktopToolbarIconSize">
+    <key name="toolbar-icons-size" enum="org.cinnade.desktop.CDesktopToolbarIconSize">
       <default>'large'</default>
       <summary>Toolbar Icon Size</summary>
       <description>
@@ -168,7 +168,7 @@
     </key>
     <key name="upscale-fractional-scaling" type="b">
       <default>false</default>
-      <summary>unused - see org.cinnamon.muffin.x11 fractional-scale-mode</summary>
+      <summary>unused - see org.cinnade.mythicwm.x11 fractional-scale-mode</summary>
     </key>
     <key name="gtk-im-status-style" type="s">
       <default>'callback'</default>

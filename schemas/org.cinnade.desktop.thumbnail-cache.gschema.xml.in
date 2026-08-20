@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="org.cinnamon.desktop.thumbnail-cache" path="/org/cinnamon/desktop/thumbnail-cache/">
+  <schema id="org.cinnade.desktop.thumbnail-cache" path="/org/cinnade/desktop/thumbnail-cache/">
     <key name="maximum-age" type="i">
       <default>180</default>
       <description>Maximum age for thumbnails in the cache, in days. Set to -1 to disable cleaning.</description>

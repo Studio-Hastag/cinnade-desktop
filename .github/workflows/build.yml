@@ -1,0 +1,52 @@
+name: Build Debian Package on Linux Mint 22.3
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  build-package:
+    runs-on: ubuntu-latest
+
+    container:
+      image: ubuntu:24.04
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - name: Install build dependencies
+        run: |
+          apt-get update
+          apt-get install -y --no-install-recommends \
+            build-essential \
+            devscripts \
+            equivs \
+            debhelper \
+            meson \
+            ninja-build \
+            git \
+            pkg-config \
+            gettext
+
+      - name: Install package build dependencies from debian/control
+        run: |
+          mk-build-deps --install --tool='apt-get -o Debug::pkgProblemResolver=yes --no-install-recommends -y' debian/control
+
+      - name: Build Debian package with dpkg-buildpackage
+        run: |
+          dpkg-buildpackage -us -uc
+
+      - name: Collect generated files
+        run: |
+          mkdir -p output
+          PARENT_DIR=$(readlink -f ..)
+          find "$PARENT_DIR" -maxdepth 1 \( -name "*.deb" -o -name "*.changes" -o -name "*.buildinfo" -o -name "*.dsc" -o -name "*.tar.*" \) -exec mv {} output/ \;
+
+      - name: Upload .deb artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: cinnade-desktop-deb
+          path: output/

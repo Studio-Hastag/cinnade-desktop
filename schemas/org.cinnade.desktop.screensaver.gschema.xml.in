@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="org.cinnamon.desktop.screensaver" path="/org/cinnamon/desktop/screensaver/">
+  <schema id="org.cinnade.desktop.screensaver" path="/org/cinnade/desktop/screensaver/">
     <key name="idle-activation-enabled" type="b">
       <default>true</default>
       <summary>Activate when idle</summary>
@@ -143,7 +143,7 @@
     <key name="custom-screensaver-command" type="s">
       <default>""</default>
       <summary>Specify custom screen locker command</summary>
-      <description>If empty, cinnamon-screensaver will be used</description>
+      <description>If empty, cinnade-screensaver will be used</description>
     </key>
   </schema>
 </schemalist>

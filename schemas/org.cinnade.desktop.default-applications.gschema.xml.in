@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="org.cinnamon.desktop.default-applications" path="/org/cinnamon/desktop/applications/">
-    <child name="office" schema="org.cinnamon.desktop.default-applications.office"/>
-    <child name="terminal" schema="org.cinnamon.desktop.default-applications.terminal"/>
-    <child name="calculator" schema="org.cinnamon.desktop.default-applications.calculator"/>
+  <schema id="org.cinnade.desktop.default-applications" path="/org/cinnade/desktop/applications/">
+    <child name="office" schema="org.cinnade.desktop.default-applications.office"/>
+    <child name="terminal" schema="org.cinnade.desktop.default-applications.terminal"/>
+    <child name="calculator" schema="org.cinnade.desktop.default-applications.calculator"/>
   </schema>
-  <schema id="org.cinnamon.desktop.default-applications.office" path="/org/cinnamon/desktop/applications/office/">
-    <child name="calendar" schema="org.cinnamon.desktop.default-applications.office.calendar"/>
-    <child name="tasks" schema="org.cinnamon.desktop.default-applications.office.tasks"/>
+  <schema id="org.cinnade.desktop.default-applications.office" path="/org/cinnade/desktop/applications/office/">
+    <child name="calendar" schema="org.cinnade.desktop.default-applications.office.calendar"/>
+    <child name="tasks" schema="org.cinnade.desktop.default-applications.office.tasks"/>
   </schema>
-  <schema id="org.cinnamon.desktop.default-applications.office.calendar" path="/org/cinnamon/desktop/applications/office/calendar/">
+  <schema id="org.cinnade.desktop.default-applications.office.calendar" path="/org/cinnade/desktop/applications/office/calendar/">
     <key name="exec" type="s">
       <default>'evolution -c calendar'</default>
       <summary>Default calendar</summary>
@@ -25,7 +25,7 @@
       </description>
     </key>
   </schema>
-  <schema id="org.cinnamon.desktop.default-applications.office.tasks" path="/org/cinnamon/desktop/applications/office/tasks/">
+  <schema id="org.cinnade.desktop.default-applications.office.tasks" path="/org/cinnade/desktop/applications/office/tasks/">
     <key name="exec" type="s">
       <default>'evolution -c tasks'</default>
       <summary>Default tasks</summary>
@@ -41,7 +41,7 @@
       </description>
     </key>
   </schema>
-  <schema id="org.cinnamon.desktop.default-applications.terminal" path="/org/cinnamon/desktop/applications/terminal/">
+  <schema id="org.cinnade.desktop.default-applications.terminal" path="/org/cinnade/desktop/applications/terminal/">
     <key name="exec" type="s">
       <default>'gnome-terminal'</default>
       <summary>Terminal application</summary>
@@ -58,7 +58,7 @@
       </description>
     </key>
   </schema>
-  <schema id="org.cinnamon.desktop.default-applications.calculator" path="/org/cinnamon/desktop/applications/calculator/">
+  <schema id="org.cinnade.desktop.default-applications.calculator" path="/org/cinnade/desktop/applications/calculator/">
     <key name="exec" type="s">
       <default>'gnome-calculator'</default>
       <summary>Default calculator</summary>

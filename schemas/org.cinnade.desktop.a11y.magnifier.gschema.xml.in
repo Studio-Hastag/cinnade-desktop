@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="org.cinnamon.desktop.a11y.magnifier" path="/org/cinnamon/desktop/a11y/magnifier/">
-    <key name="mouse-tracking" enum="org.cinnamon.desktop.CDesktopMagnifierMouseTrackingMode">
+  <schema id="org.cinnade.desktop.a11y.magnifier" path="/org/cinnade/desktop/a11y/magnifier/">
+    <key name="mouse-tracking" enum="org.cinnade.desktop.CDesktopMagnifierMouseTrackingMode">
       <default>'proportional'</default>
       <summary>Mouse Tracking Mode</summary>
       <description>
@@ -19,14 +19,14 @@
         region, the contents are scrolled into view.
       </description>
     </key>
-    <key name="lens-shape" enum="org.cinnamon.desktop.CDesktopMagnifierLensShape">
+    <key name="lens-shape" enum="org.cinnade.desktop.CDesktopMagnifierLensShape">
       <default>'square'</default>
       <summary></summary>
       <description>
         The shape of lens to use in lens mode - a square, or a vertical or horizontal band.
       </description>
     </key>
-    <key name="screen-position" enum="org.cinnamon.desktop.CDesktopMagnifierScreenPosition">
+    <key name="screen-position" enum="org.cinnade.desktop.CDesktopMagnifierScreenPosition">
       <default>'full-screen'</default>
       <summary>Screen position</summary>
       <description>

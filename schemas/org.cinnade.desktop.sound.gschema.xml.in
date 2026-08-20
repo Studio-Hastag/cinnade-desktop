@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="org.cinnamon.desktop.sound" path="/org/cinnamon/desktop/sound/">
+  <schema id="org.cinnade.desktop.sound" path="/org/cinnade/desktop/sound/">
     <key name="event-sounds" type="b">
       <default>false</default>
       <summary>Sounds for events</summary>

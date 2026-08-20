@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="org.cinnamon.desktop.thumbnailers" path="/org/cinnamon/desktop/thumbnailers/">
+  <schema id="org.cinnade.desktop.thumbnailers" path="/org/cinnade/desktop/thumbnailers/">
     <key name="disable-all" type="b">
       <default>false</default>
       <summary>Disable all external thumbnailers</summary>

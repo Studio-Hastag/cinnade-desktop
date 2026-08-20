@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="org.cinnamon.desktop.media-handling" path="/org/cinnamon/desktop/media-handling/">
+  <schema id="org.cinnade.desktop.media-handling" path="/org/cinnade/desktop/media-handling/">
     <key name="automount" type="b">
       <default>true</default>
       <summary>Whether to automatically mount media</summary>

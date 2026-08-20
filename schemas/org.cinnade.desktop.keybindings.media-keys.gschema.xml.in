@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="org.cinnamon.desktop.keybindings.media-keys" path="/org/cinnamon/desktop/keybindings/media-keys/">
+  <schema id="org.cinnade.desktop.keybindings.media-keys" path="/org/cinnade/desktop/keybindings/media-keys/">
     <key name="calculator" type="as">
       <default>['XF86Calculator']</default>
       <summary>Launch calculator</summary>
@@ -56,10 +56,10 @@
       <summary>Shut down the computer</summary>
       <description>Binding to shut down.</description>
     </key>
-    <key name="restart-cinnamon" type="as">
+    <key name="restart-cinnade" type="as">
       <default>['&lt;Control&gt;&lt;Alt&gt;Escape']</default>
-      <summary>Restart Cinnamon</summary>
-      <description>Binding to restart Cinnamon.</description>
+      <summary>Restart Cinnade</summary>
+      <description>Binding to restart Cinnade.</description>
     </key>
     <key name="previous" type="as">
       <default>['XF86AudioPrev']</default>
@@ -218,11 +218,11 @@
     </key>
     <key name="video-outputs" type="as">
       <default>[]</default>
-      <summary>obsolete - see switch-monitor in org.cinnamon.desktop.keybindings.wm</summary>
+      <summary>obsolete - see switch-monitor in org.cinnade.desktop.keybindings.wm</summary>
     </key>
     <key name="video-rotation" type="as">
       <default>[]</default>
-      <summary>obsolete - see rotate-monitor in org.cinnamon.desktop.keybindings.wm</summary>
+      <summary>obsolete - see rotate-monitor in org.cinnade.desktop.keybindings.wm</summary>
       <description>Rotate display</description>
     </key>
     <key name="video-rotation-lock" type="as">
